@@ -1,0 +1,30 @@
+{
+  imports = [
+    ./autoclose.nix
+    ./blink.nix
+    ./bufferline.nix
+    ./cellular-automaton.nix
+    ./claudecode.nix
+    ./colorscheme.nix
+    ./conform.nix
+    ./cursorline.nix
+    ./dap.nix
+    ./duck.nix
+    ./editing.nix
+    ./gitsigns.nix
+    ./lint.nix
+    ./lsp.nix
+    ./lualine.nix
+    ./mini-map.nix
+    ./neotest.nix
+    ./neo-tree.nix
+    ./noice.nix
+    ./pentatonic.nix
+    ./persistence.nix
+    ./sleuth.nix
+    ./snacks.nix
+    ./tacho.nix
+    ./tiny-inline-diagnostic.nix
+    ./treesitter.nix
+  ];
+}
