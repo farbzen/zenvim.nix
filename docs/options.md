@@ -52,7 +52,8 @@ nvim-dap as well.
 
 ## NixOS module
 
-`nixosModules.default` provides `programs.zenvim`:
+`nixosModules.zenvim` (also available as `nixosModules.default`) provides
+`programs.zenvim`:
 
 | Option                          | Type                    | Default  | Description                                               |
 | ------------------------------- | ----------------------- | -------- | --------------------------------------------------------- |

@@ -28,13 +28,19 @@
         checks.enable = true;
       };
 
-      flake = {
+      flake = rec {
         nixvimModules = {
-          default = ./src;
-          minimal = ./src/profiles/minimal.nix;
+          full = ./profiles/full.nix;
+          minimal = ./profiles/minimal.nix;
+
+          default = nixvimModules.full;
         };
 
-        nixosModules.default = import ./src/nixos-module.nix self;
+        nixosModules = {
+          zenvim = import ./modules/nixos.nix self;
+
+          default = nixosModules.zenvim;
+        };
       };
 
       perSystem = {
@@ -58,6 +64,7 @@
         nixvimConfigurations = rec {
           full = mkConfiguration [];
           minimal = mkConfiguration [self.nixvimModules.minimal];
+
           default = full;
         };
       };

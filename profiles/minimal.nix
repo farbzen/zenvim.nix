@@ -2,7 +2,7 @@
   disabled = {enable = lib.mkDefault false;};
 in {
   zenvim = {
-    languages = lib.genAttrs (lib.attrNames (import ../languages/features.nix)) (_: disabled);
+    languages = lib.genAttrs (lib.attrNames (import ../nixvim/languages/features.nix)) (_: disabled);
 
     ai.claudecode = disabled;
     bufferline = disabled;

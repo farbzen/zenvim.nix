@@ -27,17 +27,22 @@ provides:
 
 - **Neovim packages** – `packages.<system>.full`, `packages.<system>.minimal`
   and `packages.<system>.default` (= `full`), runnable with `nix run`.
-- **Nixvim modules** – `nixvimModules.default` (everything enabled) and
-  `nixvimModules.minimal` (profile that switches all optional features off), to
-  build your own variant.
-- **NixOS module** – `nixosModules.default`, adds `programs.zenvim` to pick a
-  profile, toggle single options and set `EDITOR=nvim`.
+- **Nixvim modules** – `nixvimModules.full` (= `default`, everything enabled)
+  and `nixvimModules.minimal` (profile that switches all optional features off),
+  to build your own variant.
+- **NixOS module** – `nixosModules.zenvim` (= `default`), adds
+  `programs.zenvim` to pick a profile, toggle single options and set
+  `EDITOR=nvim`.
 - **Checks** – one per profile, each starts Neovim headless and fails on any
   error or warning.
 
-The configuration lives in `src/`: general settings in `src/*.nix`, one module
-per plugin in `src/plugins/`, one module per language in `src/languages/` and
-the profiles in `src/profiles/`.
+The code is organized as follows:
+
+- `nixvim/` – the Nixvim configuration: general settings in `nixvim/*.nix`, one
+  module per plugin in `nixvim/plugins/` and one module per language in
+  `nixvim/languages/`.
+- `profiles/` – the profiles `full.nix` and `minimal.nix`.
+- `modules/` – the NixOS module `nixos.nix`.
 
 ## Features
 

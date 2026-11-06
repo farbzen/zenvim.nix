@@ -8,6 +8,17 @@ and this project adheres to
 
 ## [Unreleased]
 
+### Added
+
+- Flake outputs `nixvimModules.full` and `nixosModules.zenvim` as named
+  equivalents of `nixvimModules.default` and `nixosModules.default`.
+
+### Changed
+
+- The code moved from `src/` to `nixvim/` (Nixvim configuration), `profiles/`
+  (`full` and `minimal`) and `modules/` (NixOS module). The built packages are
+  unchanged.
+
 ## [0.1.0] - 2026-11-06
 
 ### Added
