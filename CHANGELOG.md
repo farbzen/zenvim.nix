@@ -8,6 +8,12 @@ and this project adheres to
 
 ## [Unreleased]
 
+## [0.2.1] - 2026-11-06
+
+### Added
+
+- The project is licensed under the MIT license.
+
 ## [0.2.0] - 2026-11-06
 
 ### Added
@@ -72,6 +78,7 @@ and this project adheres to
   `auto_reafter`).
 - The LLDB debug adapter points to the `codelldb` binary from nixpkgs.
 
-[Unreleased]: https://github.com/farbzen/zenvim.nix/compare/v0.2.0...HEAD
+[Unreleased]: https://github.com/farbzen/zenvim.nix/compare/v0.2.1...HEAD
+[0.2.1]: https://github.com/farbzen/zenvim.nix/compare/v0.2.0...v0.2.1
 [0.2.0]: https://github.com/farbzen/zenvim.nix/compare/v0.1.0...v0.2.0
 [0.1.0]: https://github.com/farbzen/zenvim.nix/releases/tag/v0.1.0
