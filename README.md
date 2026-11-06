@@ -4,7 +4,7 @@
 
 _A batteries-included Neovim configuration, built with Nixvim._
 
-[![Version](https://img.shields.io/badge/version-0.1.0-blue?style=for-the-badge&labelColor=081216)](CHANGELOG.md)
+[![Version](https://img.shields.io/badge/version-0.2.0-blue?style=for-the-badge&labelColor=081216)](CHANGELOG.md)
 [![Nix](https://img.shields.io/badge/nix-flake-5277C3?style=for-the-badge&logo=nixos&logoColor=white&labelColor=081216)](https://nixos.org)
 [![Neovim](https://img.shields.io/badge/neovim-nixvim-57A143?style=for-the-badge&logo=neovim&logoColor=white&labelColor=081216)](https://github.com/nix-community/nixvim)
 
