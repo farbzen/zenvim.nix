@@ -7,6 +7,7 @@ _A batteries-included Neovim configuration, built with Nixvim._
 [![Version](https://img.shields.io/badge/version-0.2.0-blue?style=for-the-badge&labelColor=081216)](CHANGELOG.md)
 [![Nix](https://img.shields.io/badge/nix-flake-5277C3?style=for-the-badge&logo=nixos&logoColor=white&labelColor=081216)](https://nixos.org)
 [![Neovim](https://img.shields.io/badge/neovim-nixvim-57A143?style=for-the-badge&logo=neovim&logoColor=white&labelColor=081216)](https://github.com/nix-community/nixvim)
+[![License](https://img.shields.io/badge/license-MIT-green?style=for-the-badge&labelColor=081216)](LICENSE)
 
 [Overview](#overview) • [Features](#features) •
 [Getting Started](#getting-started) • [Documentation](#documentation)
@@ -157,3 +158,7 @@ See [Options](docs/options.md) for the full list.
 - [Options](docs/options.md)
 - [Keymaps](docs/keymaps.md)
 - [Changelog](CHANGELOG.md)
+
+## License
+
+See [LICENSE](LICENSE).
