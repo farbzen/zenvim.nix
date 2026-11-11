@@ -52,7 +52,7 @@ The module installs the resulting package into `environment.systemPackages` and,
 unless `defaultEditor = false`, sets `EDITOR=nvim`. `settings` accepts any
 Nixvim module, so besides the `zenvim.*` switches you can also set plain Nixvim
 options there. All options are listed in the
-[NixOS options reference](reference/nixos-options.md).
+[NixOS options reference](https://farbzen.github.io/zenvim.nix/reference/nixos-options.html).
 
 > **Note:** `follows = "nixpkgs"` makes zenvim build against your system's
 > nixpkgs. Leave it out to use the exact versions pinned in zenvim's
@@ -61,7 +61,7 @@ options there. All options are listed in the
 ## Install with any other Nix setup
 
 The packages are ordinary derivations, so they can be added to a Home Manager
-configuration, or a devshell:
+configuration or a devshell:
 
 ```nix
 home.packages = [inputs.zenvim.packages.${pkgs.stdenv.hostPlatform.system}.full];
@@ -77,8 +77,9 @@ let
   configuration = inputs.nixvim.lib.evalNixvim {
     system = "x86_64-linux";
     modules = [
-      zenvim.nixvimModules.default
-      zenvim.nixvimModules.minimal
+      inputs.zenvim.nixvimModules.default
+      inputs.zenvim.nixvimModules.minimal
+      {nixpkgs.source = inputs.nixpkgs;}
       {
         zenvim.languages.python.enable = true;
         zenvim.languages.python.dap.enable = false;

@@ -8,13 +8,24 @@
   nixosOptionsDoc,
 }: let
   repositoryUrl = "https://github.com/farbzen/zenvim.nix";
+  revision = self.rev or "main";
+
+  repositoryPrefix = "${self}/";
 
   linkDeclarationToRepository = declaration: let
-    subpath = lib.removePrefix "${self}/" (toString declaration);
-  in {
-    name = subpath;
-    url = "${repositoryUrl}/blob/main/${subpath}";
-  };
+    declarationPath = toString declaration;
+    declarationFile =
+      if lib.pathIsDirectory declarationPath
+      then "${declarationPath}/default.nix"
+      else declarationPath;
+    subpath = lib.removePrefix repositoryPrefix declarationFile;
+  in
+    if lib.hasPrefix repositoryPrefix declarationPath
+    then {
+      name = subpath;
+      url = "${repositoryUrl}/blob/${revision}/${subpath}";
+    }
+    else declaration;
 
   mkOptionsMarkdown = options:
     (nixosOptionsDoc {
@@ -25,7 +36,7 @@
 
   nixosModuleEvaluation = lib.evalModules {
     modules = [
-      (import ../modules/nixos.nix self)
+      self.nixosModules.zenvim
       {
         _module = {
           args.pkgs = pkgs;

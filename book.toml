@@ -11,4 +11,3 @@ create-missing = false
 [output.html]
 site-url = "/zenvim.nix/"
 git-repository-url = "https://github.com/farbzen/zenvim.nix"
-edit-url-template = "https://github.com/farbzen/zenvim.nix/edit/main/{path}"

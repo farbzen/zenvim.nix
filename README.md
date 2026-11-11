@@ -162,9 +162,17 @@ The full documentation is published at
 [farbzen.github.io/zenvim.nix](https://farbzen.github.io/zenvim.nix/). Build it
 locally with `nix build .#docs`.
 
+- [Installation](docs/installation.md)
+- [Profiles](docs/profiles.md)
 - [Options](docs/options.md)
 - [Keymaps](docs/keymaps.md)
+- [Languages](docs/languages.md)
+- [Plugins](docs/plugins.md)
+- [Editor defaults](docs/editor.md)
+- [Troubleshooting](docs/troubleshooting.md)
+- [Development](docs/development.md)
 - [Changelog](CHANGELOG.md)
+- [Legal Notice](docs/legal.md)
 
 ## License
 

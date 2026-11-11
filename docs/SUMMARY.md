@@ -22,3 +22,7 @@
 
 - [Development](development.md)
 - [Changelog](changelog.md)
+
+---
+
+[Legal Notice](legal.md)

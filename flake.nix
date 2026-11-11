@@ -37,7 +37,7 @@
         };
 
         nixosModules = {
-          zenvim = import ./modules/nixos.nix self;
+          zenvim = inputs.nixpkgs.lib.modules.importApply ./modules/nixos.nix self;
 
           default = nixosModules.zenvim;
         };

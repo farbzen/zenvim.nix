@@ -86,7 +86,8 @@ its configuration. An optional plugin declares a switch that defaults to `true`:
 ```
 
 Then add `<name> = disabled;` to `profiles/minimal.nix` and document the option
-in [Options](options.md). The [option reference](reference/nixvim-options.md)
+in [Options](options.md). The
+[option reference](https://farbzen.github.io/zenvim.nix/reference/nixvim-options.html)
 picks it up automatically.
 
 Keymaps belong to the module of the plugin they use and always get an
@@ -106,7 +107,11 @@ xdg-open result/index.html
 ```
 
 A GitHub Actions workflow (`.github/workflows/docs.yml`) builds the book on
-every push to `main` and publishes it to GitHub Pages.
+every push to `main` and publishes it to GitHub Pages; pull requests only build
+it.
+
+> **Note:** The deployment only works once the repository's Pages source is set
+> to "GitHub Actions" (Settings → Pages → Build and deployment → Source).
 
 ## Versioning and changelog
 
