@@ -9,6 +9,11 @@ Germany
 
 Email: webmaster@farbzen.de
 
+## Responsible for content in accordance with § 18 (2) MStV
+
+<img src="images/legal-address.png" alt="Name and address" width="220">\
+Germany
+
 ## Liability for links
 
 This site contains links to external third-party websites whose content is
