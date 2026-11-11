@@ -1,5 +1,7 @@
 <div align="center">
 
+<img src=".assets/logo.svg" alt="zenvim logo" width="128">
+
 # zenvim.nix
 
 _A batteries-included Neovim configuration, built with Nixvim._
