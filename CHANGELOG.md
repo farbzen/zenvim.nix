@@ -8,11 +8,18 @@ and this project adheres to
 
 ## [Unreleased]
 
+## [0.3.0] - 2026-11-11
+
 ### Added
 
 - Documentation website built with mdBook and published to GitHub Pages,
   including an option reference generated from the module declarations.
 - Flake output `packages.<system>.docs` that builds the documentation website.
+
+### Changed
+
+- `nixosModules.zenvim` carries its file location, so evaluation errors point to
+  `modules/nixos.nix`.
 
 ## [0.2.1] - 2026-11-06
 
@@ -84,7 +91,8 @@ and this project adheres to
   `auto_reafter`).
 - The LLDB debug adapter points to the `codelldb` binary from nixpkgs.
 
-[Unreleased]: https://github.com/farbzen/zenvim.nix/compare/v0.2.1...HEAD
+[Unreleased]: https://github.com/farbzen/zenvim.nix/compare/v0.3.0...HEAD
+[0.3.0]: https://github.com/farbzen/zenvim.nix/compare/v0.2.1...v0.3.0
 [0.2.1]: https://github.com/farbzen/zenvim.nix/compare/v0.2.0...v0.2.1
 [0.2.0]: https://github.com/farbzen/zenvim.nix/compare/v0.1.0...v0.2.0
 [0.1.0]: https://github.com/farbzen/zenvim.nix/releases/tag/v0.1.0
