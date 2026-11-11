@@ -8,6 +8,12 @@ and this project adheres to
 
 ## [Unreleased]
 
+### Added
+
+- Documentation website built with mdBook and published to GitHub Pages,
+  including an option reference generated from the module declarations.
+- Flake output `packages.<system>.docs` that builds the documentation website.
+
 ## [0.2.1] - 2026-11-06
 
 ### Added

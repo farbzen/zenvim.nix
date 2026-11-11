@@ -34,6 +34,9 @@ provides:
 - **NixOS module** – `nixosModules.zenvim` (= `default`), adds
   `programs.zenvim` to pick a profile, toggle single options and set
   `EDITOR=nvim`.
+- **Documentation** – `packages.<system>.docs`, this project's
+  [mdBook](https://rust-lang.github.io/mdBook/) website including a generated
+  option reference.
 - **Checks** – one per profile, each starts Neovim headless and fails on any
   error or warning.
 
@@ -154,6 +157,10 @@ inputs.nixvim.lib.evalNixvim {
 See [Options](docs/options.md) for the full list.
 
 ## Documentation
+
+The full documentation is published at
+[farbzen.github.io/zenvim.nix](https://farbzen.github.io/zenvim.nix/). Build it
+locally with `nix build .#docs`.
 
 - [Options](docs/options.md)
 - [Keymaps](docs/keymaps.md)

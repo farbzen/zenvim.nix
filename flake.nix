@@ -44,6 +44,7 @@
       };
 
       perSystem = {
+        config,
         pkgs,
         system,
         ...
@@ -60,6 +61,11 @@
           };
       in {
         formatter = pkgs.alejandra;
+
+        packages.docs = pkgs.callPackage ./nix/docs.nix {
+          inherit self;
+          nixvimConfiguration = config.nixvimConfigurations.full;
+        };
 
         nixvimConfigurations = rec {
           full = mkConfiguration [];
