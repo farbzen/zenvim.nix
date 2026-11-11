@@ -1,6 +1,6 @@
 # Legal Notice
 
-## Information pursuant to § 5 DDG
+## Information in accordance with German law (§ 5 DDG)
 
 <img src="images/legal-address.png" alt="Name and address" width="220">\
 Germany
@@ -8,10 +8,6 @@ Germany
 ## Contact
 
 Email: webmaster@farbzen.de
-
-## Responsible for the content pursuant to § 18 (2) MStV
-
-<img src="images/legal-address.png" alt="Name and address" width="220">
 
 ## Liability for links
 
