@@ -87,7 +87,7 @@ its configuration. An optional plugin declares a switch that defaults to `true`:
 
 Then add `<name> = disabled;` to `profiles/minimal.nix` and document the option
 in [Options](options.md). The
-[option reference](https://farbzen.github.io/zenvim.nix/reference/nixvim-options.html)
+[option reference](https://zenvim.farbzen.de/reference/nixvim-options.html)
 picks it up automatically.
 
 Keymaps belong to the module of the plugin they use and always get an

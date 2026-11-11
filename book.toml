@@ -9,5 +9,5 @@ src = "docs"
 create-missing = false
 
 [output.html]
-site-url = "/zenvim.nix/"
+site-url = "/"
 git-repository-url = "https://github.com/farbzen/zenvim.nix"

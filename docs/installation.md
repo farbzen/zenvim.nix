@@ -52,7 +52,7 @@ The module installs the resulting package into `environment.systemPackages` and,
 unless `defaultEditor = false`, sets `EDITOR=nvim`. `settings` accepts any
 Nixvim module, so besides the `zenvim.*` switches you can also set plain Nixvim
 options there. All options are listed in the
-[NixOS options reference](https://farbzen.github.io/zenvim.nix/reference/nixos-options.html).
+[NixOS options reference](https://zenvim.farbzen.de/reference/nixos-options.html).
 
 > **Note:** `follows = "nixpkgs"` makes zenvim build against your system's
 > nixpkgs. Leave it out to use the exact versions pinned in zenvim's

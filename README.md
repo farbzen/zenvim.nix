@@ -159,8 +159,8 @@ See [Options](docs/options.md) for the full list.
 ## Documentation
 
 The full documentation is published at
-[farbzen.github.io/zenvim.nix](https://farbzen.github.io/zenvim.nix/). Build it
-locally with `nix build .#docs`.
+[zenvim.farbzen.de](https://zenvim.farbzen.de/). Build it locally with
+`nix build .#docs`.
 
 - [Installation](docs/installation.md)
 - [Profiles](docs/profiles.md)
